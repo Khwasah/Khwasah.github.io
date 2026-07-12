@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugam | AI Enthusiast & SQL Analyst</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Background glow elements -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">sugam<span class="dot">.</span></a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i data-lucide="moon" class="icon-dark"></i>
+                    <i data-lucide="sun" class="icon-light"></i>
+                </button>
+                <a href="#contact" class="btn-primary nav-cta">Contact Me</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i data-lucide="menu" class="icon-open"></i>
+                    <i data-lucide="x" class="icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="btn-primary mobile-cta">Contact Me</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge-wrapper">
+                        <span class="status-pulse"></span>
+                        <span class="status-text">Available for projects & collaborations</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Sugam</span>
+                    </h1>
+                    
+                    <h2 class="hero-subtitle">
+                        I'm a <span id="typing-text"></span><span class="cursor">|</span>
+                    </h2>
+                    
+                    <p class="hero-description">
+                        An ambitious student specializing in data analysis and artificial intelligence. I write SQL to solve complex business questions and leverage prompt engineering to build intelligent workflows.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/Khwasah" target="_blank" class="btn-secondary">
+                            <i data-lucide="github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <div class="image-border-glow">
+                        <div class="image-wrapper">
+                            <img src="assets/sugam.png" alt="Sugam's Portrait" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Who I Am & What I Do</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card glass">
+                        <div class="about-card-icon">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <h3>Who I Am</h3>
+                        <p>
+                            I am a student driven by a deep curiosity for how data and artificial intelligence shape our world. My learning path focuses on extracting valuable insights from raw database systems and applying modern prompt engineering frameworks to unlock AI's full potential.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass">
+                        <div class="about-card-icon">
+                            <i data-lucide="compass"></i>
+                        </div>
+                        <h3>My Journey</h3>
+                        <p>
+                            Starting from foundational database programming, I have learned to write high-impact SQL code that tackles complex dataset querying problems. Expanding into Python and AI model optimization, I develop end-to-end approaches that connect clean data analysis to intelligent solutions.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass">
+                        <div class="about-card-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>What Drives Me</h3>
+                        <p>
+                            I believe in the power of simplicity. Whether it is a beautifully designed interface, an elegant SQL query, or a highly optimized prompt, my goal is always to refine and streamline. I enjoy solving real-world business problems and collaborating with like-minded developers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Skills</span>
+                    <h2 class="section-title">Technological Foundation</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Core Technical -->
+                    <div class="skills-category-card glass">
+                        <h3 class="category-title">
+                            <i data-lucide="code"></i>
+                            <span>Core Technical</span>
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Analysis</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Modern Engineering -->
+                    <div class="skills-category-card glass">
+                        <h3 class="category-title">
+                            <i data-lucide="cpu"></i>
+                            <span>AI & Engineering</span>
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Artificial Intelligence (AI)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Prompt Engineering</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AI Workflow Automation</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Competencies -->
+                    <div class="skills-category-card glass">
+                        <h3 class="category-title">
+                            <i data-lucide="brain"></i>
+                            <span>Core Competencies</span>
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">English Proficiency</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Critical Thinking</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-wrapper">
+                                    <div class="skill-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Selected Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="project-featured glass">
+                    <div class="project-details">
+                        <span class="project-tag">Featured SQL Project</span>
+                        <h3 class="project-title">E-commerce Sales SQL Analysis</h3>
+                        <p class="project-desc">
+                            A comprehensive SQL-based analytics project evaluating business sales data from an e-commerce platform. Designed to extract action-oriented insights regarding sales metrics, customer purchasing behavior, regional distribution, and top product performances.
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Cohorts & Retention Analysis</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Revenue Growth Rates & KPI Tracking</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>Complex Multi-Table Joins & CTEs</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <span class="tech-pill">SQL</span>
+                            <span class="tech-pill">PostgreSQL / MySQL</span>
+                            <span class="tech-pill">Relational Databases</span>
+                            <span class="tech-pill">Data Analytics</span>
+                            <span class="tech-pill">E-commerce</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/Khwasah/-ecommerce-sales-sql-analysis" target="_blank" class="btn-primary">
+                                <i data-lucide="github"></i>
+                                <span>View Repository</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <div class="query-editor-mockup">
+                            <div class="editor-header">
+                                <span class="editor-dot red"></span>
+                                <span class="editor-dot yellow"></span>
+                                <span class="editor-dot green"></span>
+                                <span class="editor-title">sales_analysis.sql</span>
+                            </div>
+                            <div class="editor-body">
+                                <pre><code><span class="keyword">WITH</span> monthly_sales <span class="keyword">AS</span> (
+    <span class="keyword">SELECT</span> 
+        DATE_TRUNC(<span class="string">'month'</span>, order_date) <span class="keyword">AS</span> sale_month,
+        <span class="function">SUM</span>(total_amount) <span class="keyword">AS</span> revenue,
+        <span class="function">COUNT</span>(order_id) <span class="keyword">AS</span> total_orders
+    <span class="keyword">FROM</span> ecom_orders
+    <span class="keyword">WHERE</span> status = <span class="string">'Completed'</span>
+    <span class="keyword">GROUP</span> <span class="keyword">BY</span> 1
+)
+<span class="keyword">SELECT</span> 
+    sale_month,
+    revenue,
+    revenue - <span class="function">LAG</span>(revenue) <span class="keyword">OVER</span> (<span class="keyword">ORDER</span> <span class="keyword">BY</span> sale_month) <span class="keyword">AS</span> revenue_diff,
+    <span class="function">ROUND</span>(100.0 * (revenue - <span class="function">LAG</span>(revenue) <span class="keyword">OVER</span> (<span class="keyword">ORDER</span> <span class="keyword">BY</span> sale_month)) 
+        / <span class="function">LAG</span>(revenue) <span class="keyword">OVER</span> (<span class="keyword">ORDER</span> <span class="keyword">BY</span> sale_month), 2) <span class="keyword">AS</span> growth_rate
+<span class="keyword">FROM</span> monthly_sales;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-grid">
+                <div class="contact-info-panel">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-intro">
+                        Have a question, an opportunity, or just want to chat about AI or SQL analysis? Feel free to drop a message or reach out via my social networks.
+                    </p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:sugam.student.portfolio@example.com" class="contact-value">sugam.student.portfolio@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Nepal / Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-grid">
+                        <a href="https://github.com/Khwasah" target="_blank" class="social-btn glass" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-btn glass" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel glass">
+                    <form id="portfolio-contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" placeholder="Let's build something premium together..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit-btn">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="success-message" id="form-success">
+                        <div class="success-icon-container">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out, Sugam will get back to you shortly.</p>
+                        <button class="btn-secondary" id="success-close-btn">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="logo">sugam<span class="dot">.</span></a>
+                <p>Crafting intelligent applications & unlocking data-driven growth.</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                </div>
+                <p class="copyright">&copy; 2026 Sugam. All rights reserved.</p>
+            </div>
+        </div>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll to top">
+            <i data-lucide="arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
