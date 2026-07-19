@@ -94,8 +94,72 @@
                 <div class="hero-image-container">
                     <div class="image-border-glow">
                         <div class="image-wrapper">
-                            <img src="assets/sugam.png" alt="Sugam's Portrait" class="profile-image">
+                            <!-- To display a profile photo, place an image named "sugam.png" in the "portfolio/assets" folder on GitHub -->
+                            <img src="assets/sugam.png" alt="Sugam's Portrait" class="profile-image" id="profile-img" onload="document.getElementById('profile-avatar').style.display='none';" onerror="this.style.display='none'; document.getElementById('profile-avatar').style.display='flex';">
+                            <div id="profile-avatar" class="profile-avatar-placeholder" style="display: flex;">
+                                <span>S</span>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Ticker -->
+        <section class="section-ticker reveal">
+            <div class="ticker-container">
+                <div class="ticker-track">
+                    <div class="ticker-item"><i data-lucide="database"></i><span>SQL</span></div>
+                    <div class="ticker-item"><i data-lucide="terminal"></i><span>PostgreSQL</span></div>
+                    <div class="ticker-item"><i data-lucide="table-properties"></i><span>MySQL</span></div>
+                    <div class="ticker-item"><i data-lucide="code-2"></i><span>Python</span></div>
+                    <div class="ticker-item"><i data-lucide="cpu"></i><span>OpenAI / LLMs</span></div>
+                    <div class="ticker-item"><i data-lucide="bot"></i><span>Claude / Anthropic</span></div>
+                    <div class="ticker-item"><i data-lucide="sparkles"></i><span>Prompt Engineering</span></div>
+                    <div class="ticker-item"><i data-lucide="git-branch"></i><span>Git & GitHub</span></div>
+                    <div class="ticker-item"><i data-lucide="bar-chart-3"></i><span>Data Analytics</span></div>
+                    <!-- Duplicate items for loop -->
+                    <div class="ticker-item"><i data-lucide="database"></i><span>SQL</span></div>
+                    <div class="ticker-item"><i data-lucide="terminal"></i><span>PostgreSQL</span></div>
+                    <div class="ticker-item"><i data-lucide="table-properties"></i><span>MySQL</span></div>
+                    <div class="ticker-item"><i data-lucide="code-2"></i><span>Python</span></div>
+                    <div class="ticker-item"><i data-lucide="cpu"></i><span>OpenAI / LLMs</span></div>
+                    <div class="ticker-item"><i data-lucide="bot"></i><span>Claude / Anthropic</span></div>
+                    <div class="ticker-item"><i data-lucide="sparkles"></i><span>Prompt Engineering</span></div>
+                    <div class="ticker-item"><i data-lucide="git-branch"></i><span>Git & GitHub</span></div>
+                    <div class="ticker-item"><i data-lucide="bar-chart-3"></i><span>Data Analytics</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Focus Section (Beyond Just Coding) -->
+        <section id="focus" class="section focus-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Beyond Just Coding</span>
+                    <h2 class="section-title">Core Areas of Focus</h2>
+                </div>
+                <div class="focus-grid">
+                    <div class="focus-card glass">
+                        <div class="focus-card-icon-wrapper">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3>Data Analysis & SQL</h3>
+                        <p>Writing advanced database queries, optimizing transaction tables, performing cohort analyses, and structuring business datasets to draw clear, actionable growth insights.</p>
+                    </div>
+                    <div class="focus-card glass">
+                        <div class="focus-card-icon-wrapper">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+                        <h3>AI & Prompt Architecture</h3>
+                        <p>Designing sophisticated system prompts, scripting automation flows, and optimizing AI systems to streamline developer productivity and scale intelligent business tools.</p>
+                    </div>
+                    <div class="focus-card glass">
+                        <div class="focus-card-icon-wrapper">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3>Algorithm & Logic Design</h3>
+                        <p>Constructing clean, efficient Python programs, modeling complex business logic, and applying data structure principles to build clean, functional, and error-free backend scripts.</p>
                     </div>
                 </div>
             </div>
@@ -344,8 +408,104 @@
             </div>
         </section>
 
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Achievements</span>
+                    <h2 class="section-title">Professional Certifications</h2>
+                </div>
+                
+                <div class="certifications-grid">
+                    <div class="cert-card glass">
+                        <div class="cert-header">
+                            <div class="cert-icon-wrapper">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <span class="cert-date">July 2026</span>
+                        </div>
+                        <h3 class="cert-name">Google Data Analytics Professional</h3>
+                        <p class="cert-org">Issued by Google • Coursera Verification</p>
+                        <p class="cert-description">
+                            Rigorous data analysis training spanning SQL queries, spreadsheet modeling, Tableau visualizations, and dataset structures.
+                        </p>
+                        <div class="cert-footer">
+                            <span class="cert-id">Cred ID: GOOG-DA-9981</span>
+                            <a href="https://www.coursera.org" target="_blank" class="cert-link">
+                                <span>Verify</span>
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass">
+                        <div class="cert-header">
+                            <div class="cert-icon-wrapper">
+                                <i data-lucide="sparkles"></i>
+                            </div>
+                            <span class="cert-date">June 2026</span>
+                        </div>
+                        <h3 class="cert-name">AI & Prompt Engineering Masterclass</h3>
+                        <p class="cert-org">Issued by Vanderbilt University</p>
+                        <p class="cert-description">
+                            Comprehensive training on advanced instruction tuning, LLM patterns, system prompt design, and automations.
+                        </p>
+                        <div class="cert-footer">
+                            <span class="cert-id">Cred ID: VAND-AI-3829</span>
+                            <a href="https://www.coursera.org" target="_blank" class="cert-link">
+                                <span>Verify</span>
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass">
+                        <div class="cert-header">
+                            <div class="cert-icon-wrapper">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <span class="cert-date">May 2026</span>
+                        </div>
+                        <h3 class="cert-name">Python for Data Science, AI & Development</h3>
+                        <p class="cert-org">Issued by IBM • Coursera Verification</p>
+                        <p class="cert-description">
+                            Core Python programming covers classes, structures, APIs, and data manipulating libraries like Pandas and Numpy.
+                        </p>
+                        <div class="cert-footer">
+                            <span class="cert-id">Cred ID: IBM-PY-4720</span>
+                            <a href="https://www.coursera.org" target="_blank" class="cert-link">
+                                <span>Verify</span>
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass">
+                        <div class="cert-header">
+                            <div class="cert-icon-wrapper">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <span class="cert-date">April 2026</span>
+                        </div>
+                        <h3 class="cert-name">PostgreSQL Relational Querying</h3>
+                        <p class="cert-org">Issued by Stanford Online / Udemy</p>
+                        <p class="cert-description">
+                            In-depth mastery of relational schema designs, table joins, index strategies, CTE tables, and query speedups.
+                        </p>
+                        <div class="cert-footer">
+                            <span class="cert-id">Cred ID: UD-SQL-8841</span>
+                            <a href="https://www.udemy.com" target="_blank" class="cert-link">
+                                <span>Verify</span>
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
+        <section id="contact" class="section contact-section reveal">
             <div class="container contact-grid">
                 <div class="contact-info-panel">
                     <span class="section-tag">Get in Touch</span>
@@ -380,7 +540,7 @@
                         <a href="https://github.com/Khwasah" target="_blank" class="social-btn glass" aria-label="GitHub">
                             <i data-lucide="github"></i>
                         </a>
-                        <a href="#" target="_blank" class="social-btn glass" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/su-pra-99812a403/" target="_blank" class="social-btn glass" aria-label="LinkedIn">
                             <i data-lucide="linkedin"></i>
                         </a>
                     </div>

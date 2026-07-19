@@ -203,4 +203,41 @@ document.addEventListener('DOMContentLoaded', () => {
             formSuccess.classList.remove('active');
         });
     }
+
+    /* -------------------------------------------------------------
+     * Scroll Reveal Animation (Intersection Observer)
+     * ------------------------------------------------------------- */
+    const revealElements = document.querySelectorAll('.reveal');
+    
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active-reveal');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
+
+    /* -------------------------------------------------------------
+     * Mouse Glow Spotlight Effect for Cards
+     * ------------------------------------------------------------- */
+    const glowCards = document.querySelectorAll('.focus-card, .cert-card');
+    
+    glowCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    });
 });
